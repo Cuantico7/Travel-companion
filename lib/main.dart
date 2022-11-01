@@ -3,6 +3,8 @@ import 'description_place.dart';
 import 'review_list.dart';
 import 'gradient_back.dart';
 import 'header_appbar.dart';
+import 'colombia_trips.dart';
+import 'colombia_trips_cupertino.dart';
 
 void main() {
   runApp( MyApp());
@@ -12,8 +14,8 @@ class MyApp extends StatelessWidget {
  MyApp({super.key});
 
   // This widget is the root of your application.
- String descriptionDummy="Piratas, corsarios y bucaneros; flotas, poderosos navíos y marinas de guerra de todas las latitudes se acercaron a sus playas sin poder creer lo que sus ojos les mostraban, era el lugar que solo en sueños podían divisar y que para envidiosamente evitar que otros disfrutarán, hubo que fortificar.Cartagena de Indias, una perla en el mar Caribe cuya belleza la ha convertido desde hace décadas en punto obligado del turismo en Colombia, sin duda, es el destino más apetecido por los visitantes que no logran escapar a su magia y que motivados por su esplendor regresan para descubrir nuevas emociones y experimentar una sensación única, esa que solo se puede entender al divisar el horizonte azulado que se posa junto a sus murallas.";
 
+ //String descriptionDummy="Piratas, corsarios y bucaneros; flotas, poderosos navíos y marinas de guerra de todas las latitudes se acercaron a sus playas sin poder creer lo que sus ojos les mostraban, era el lugar que solo en sueños podían divisar y que para envidiosamente evitar que otros disfrutarán, hubo que fortificar.Cartagena de Indias, una perla en el mar Caribe cuya belleza la ha convertido desde hace décadas en punto obligado del turismo en Colombia, sin duda, es el destino más apetecido por los visitantes que no logran escapar a su magia y que motivados por su esplendor regresan para descubrir nuevas emociones y experimentar una sensación única, esa que solo se puede entender al divisar el horizonte azulado que se posa junto a sus murallas.";
 
 
   @override
@@ -32,23 +34,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        //body:  DescriptionPlace("CARTAGENA", 4, descriptionDummy),
-        body: Stack(
-          children:<Widget> [
-            ListView(
-              children:<Widget> [
-                DescriptionPlace("CARTAGENA", 4, descriptionDummy),
-                ReviewList()
-
-              ],
-            ),
-            //GradientBack("Pupular")
-            HeaderAppBar()
-          ],
-
-        ) ,
-      )
+      home: ColombiaCupertino()
     );
   }
 }

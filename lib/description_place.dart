@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   //const DescriptionPlace({Key? key}) : super(key: key);
@@ -91,11 +91,13 @@ class DescriptionPlace extends StatelessWidget {
 
     return SingleChildScrollView(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           title_start,
-          description
+          description,
+          ButtonPurple("buscar"),
         ],
 
       ),
